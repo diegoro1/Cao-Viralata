@@ -121,8 +121,10 @@ html {
     color: orange;
 }
 
-.burger{
+#burger{
     display: none;
+    margin: 2rem;
+
 }
 .menu-option{
     height: 5px;
@@ -133,8 +135,60 @@ html {
 
 /* mobile nav-bar */
 @media screen and (max-width: 768px){
-    body{
+    .mobile-nav-list{
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 25vh;
+        width: 100%;
+        top: 4rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: #333333 solid 1px;
+
+        transform: translateY(-150%);
+        transition: transform 300ms ease-in-out;
+
+        z-index: -1;
+    }
+    .mobile-nav-list-active{
+        transform: translateY(0%);
+    }
+
+    .nav-bar{
+        z-index: 1;
+    }
+    .nav-bar-active{
+        border-bottom: none;
+    }
+    
+    .nav-item{
+        position: relative;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #nav-icons{
         display: none;
+    }
+
+    #burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .center-logo{
+        /* display: none; */
+        width: 300px !important;
+        height: auto !important;
+    }
+
+    /* Media */
+    .main-container-media .center-content{
+        margin: 2rem !important;
     }
 }
 
@@ -196,4 +250,73 @@ footer{
     align-items: center;
     height: 4rem;
     border-top: solid 1px #333333;
+}
+
+footer p{
+    padding: 0 2rem;
+    position: relative;
+    z-index: -2;
+}
+
+
+
+/* Media page */
+.media{
+    width: 100%;
+}
+
+.main-container-media{
+    position: relative;
+    z-index: 1;
+}
+
+.main-container-media .center-content{
+    margin: 2rem 10rem;
+    z-index: -2;
+    position: relative;
+}
+
+.image-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: #333333 solid 1px;
+}
+
+.image-display img{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    max-width: 300px;
+}
+
+.video-display{
+    padding: 0 2rem;
+    border-top: #333333 solid 1px;
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.yt-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center-content p{
+    font-size: 1.25rem;
+}
+
+.warpper{
+    display: flex;
+    align-self: center;
 }
