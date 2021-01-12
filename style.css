@@ -285,7 +285,7 @@ footer p{
 
 .image-display img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
     margin: 1rem 0;
     max-width: 300px;
 }
@@ -372,6 +372,7 @@ footer p{
         width: 100%;
     }
 }
+
 
 
 /* Contact page */
