@@ -372,3 +372,57 @@ footer p{
         width: 100%;
     }
 }
+
+
+/* Contact page */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2;
+}
+input:focus, textarea:focus{
+    border-bottom:2px solid orange;
+}
+
+#message{
+    height: 10rem;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.87);
+    margin: 0 4rem;
+    width: 75%;
+    border-radius: 8px;
+    padding:20px 30px;
+    box-sizing: border-box;
+    color: black;
+}
+
+form h2{
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 15rem;
+    border-bottom: 3px solid orange;
+}
+
+#submit-button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid #78788c;
+    background: 0; 
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 8px;
+}
+#submit-button:hover{
+    background-color: black;
+    color: orange;
+    border-color: black;
+}
