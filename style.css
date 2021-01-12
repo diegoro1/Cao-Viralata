@@ -285,7 +285,6 @@ footer p{
 
 .image-display img{
     width: 100%;
-    height: auto;
     margin: 1rem 0;
     max-width: 300px;
 }
@@ -319,8 +318,8 @@ footer p{
 .warpper{
     display: flex;
     align-self: center;
-    height: auto;
 }
+
 
 
 /* Events Page */
